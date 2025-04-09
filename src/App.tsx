@@ -1,10 +1,9 @@
-import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
-import { IonReactRouter } from '@ionic/react-router';
+ import { Redirect, Route } from 'react-router-dom';
+ import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
+ import { IonReactRouter } from '@ionic/react-router';
 
-
-/* Core CSS required for Ionic components to work properly */
-import '@ionic/react/css/core.css';
+ /* Core CSS required for Ionic components to work properly */
+ import '@ionic/react/css/core.css';
 
 /* Basic CSS for apps built with Ionic */
 import '@ionic/react/css/normalize.css';
@@ -43,7 +42,7 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonRouterOutlet>
         <Route exact path="/IAS-Project" component={Login} />
-        <Route exact path="/IAS-Project/register" component={Register} />
+        <Route exact path="/IAS-Project/Register" component={Register} />
         <Route path="/IAS-Project/app" component={Menu} />
       </IonRouterOutlet>
     </IonReactRouter>

@@ -45,7 +45,7 @@ const Login: React.FC = () => {
 
     setShowToast(true); 
     setTimeout(() => {
-      navigation.push('/it35-lab/app', 'forward', 'replace');
+      navigation.push('/IAS-Project/app', 'forward', 'replace');
     }, 300);
   };
   
@@ -69,46 +69,44 @@ const Login: React.FC = () => {
               borderRadius: '50%', 
               overflow: 'hidden' 
             }}
-          >
-            <IonIcon 
-              icon={logoIonic}
-              color='primary'
-              style={{ 
-                fontSize: '150px', color: '#33f508' 
-              }} 
-            />
-          </IonAvatar>
-          <h1 style={{
+          >   
+               </IonAvatar>
+    <h1 style={{
       marginTop:'20px',
       display: 'flex',
-      width: '100%',
+      width: '50%',
       alignItems: 'center', 
       justifyContent: 'center',
           }}>
-            USER LOGIN</h1>
+        USER LOGIN
+    </h1>
           <IonInput style={{
               marginTop:'15px',
               display: 'flex',
-              width: '80%',
+              width: '50%',
               alignItems: 'center',
               justifyContent: 'center',
             }}      
-            fill="outline"
-            type="Email"
-            placeholder="Email"
-            value={email}
-            onIonChange={e => setEmail(e.detail.value!)}
-          />
+          label="Email"
+          labelPlacement="floating"
+          fill="outline"
+          type="email"
+          placeholder="Registered Email"
+          value={email}
+          onIonChange={e => setEmail(e.detail.value!)}
+        />
           <IonInput style={{
-              marginTop:'15px',
+              marginTop:'8px',
               display: 'flex',
-              width: '80%',
+              width: '50%',
               alignItems: 'center',
               justifyContent: 'center',
             }}      
+            label="Password"
+            labelPlacement="floating"
             fill="outline"
             type="password"
-            placeholder="Password"
+            placeholder="Input password"
             value={password}
             onIonChange={e => setPassword(e.detail.value!)}
           >
@@ -121,7 +119,7 @@ const Login: React.FC = () => {
   style={{
     display: 'block',
     margin: '20px auto', 
-    width: '70%',        
+    width: '40%',        
     fontSize: '16px',
     fontWeight: '800',
     fontFamily: 'Arial, sans-serif',
@@ -133,18 +131,17 @@ const Login: React.FC = () => {
 </IonButton>
 
 <IonButton
-  routerLink="/it35-lab/Register"
+  routerLink="/IAS-Project/Register"
   fill="clear"
   shape="round"
   style={{
     display: 'block',
     margin: '20px auto',
-    width: '50%',
+    width: '30%',
     fontSize: '15px',
     fontWeight: '500',
     fontFamily: 'Arial, sans-serif',
     color: '#007bff',
-    border: '1.5px solid #007bff',
     borderRadius: '25px',
     backgroundColor: 'transparent',
     textTransform: 'none',
