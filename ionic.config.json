@@ -1,0 +1,7 @@
+{
+  "name": "IAS-Project",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
