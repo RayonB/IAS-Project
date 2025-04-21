@@ -53,12 +53,12 @@ const Login: React.FC = () => {
   return (
     <IonPage>
       <IonContent fullscreen className="ion-padding" scrollY={false}>
-        {/* Background gradient and SVG wave */}
+        {/* Background Gradient and SVG */}
         <div
           style={{
             position: 'absolute',
             inset: 0,
-            background: 'linear-gradient(135deg, #90caf9, #e3f2fd)',
+            background: 'linear-gradient(135deg, #f8bbd0, #fce4ec)',
             zIndex: 0,
             overflow: 'hidden',
           }}
@@ -76,12 +76,12 @@ const Login: React.FC = () => {
             <path
               fill="#ffffff"
               fillOpacity="1"
-              d="M0,224L40,202.7C80,181,160,139,240,122.7C320,107,400,117,480,144C560,171,640,213,720,229.3C800,245,880,235,960,202.7C1040,171,1120,117,1200,96C1280,75,1360,85,1400,90.7L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+              d="M0,224L40,202.7C80,181,160,139,240,122.7C320,107,400,117,480,144C560,171,640,213,720,229.3C800,245,880,235,960,202.7C1040,171,1120,117,1200,96C1280,75,1360,85,1400,90.7L1440,96L1440,320L0,320Z"
             ></path>
           </svg>
         </div>
 
-        {/* Login card */}
+        {/* Login Card */}
         <div
           style={{
             position: 'relative',
@@ -97,11 +97,26 @@ const Login: React.FC = () => {
             textAlign: 'center',
           }}
         >
-          {/* Smiley Emoji Avatar */}
-          <div style={{ fontSize: '48px', marginBottom: '20px' }}>😊</div>
+          {/* Emoji Smiley */}
+          <div
+            style={{
+              margin: '0 auto 20px',
+              width: '80px',
+              height: '80px',
+              backgroundColor: '#ffecb3',
+              borderRadius: '50%',
+              fontSize: '40px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              boxShadow: '0 5px 10px rgba(0,0,0,0.1)',
+            }}
+          >
+            😊
+          </div>
 
           <h2 style={{ fontWeight: 'bold', fontSize: '22px', marginBottom: '25px', color: '#333' }}>
-            User Login
+            Welcome Back
           </h2>
 
           <IonInput
@@ -147,10 +162,8 @@ const Login: React.FC = () => {
           </IonButton>
         </div>
 
-        {/* AlertBox */}
+        {/* Alert & Toast */}
         <AlertBox message={alertMessage} isOpen={showAlert} onClose={() => setShowAlert(false)} />
-
-        {/* Toast */}
         <IonToast
           isOpen={showToast}
           onDidDismiss={() => setShowToast(false)}
