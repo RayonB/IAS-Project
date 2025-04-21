@@ -32,11 +32,36 @@ function Search() {
       color: "warning",
       button: "I Feel That",
     },
-    // ... (keep your other quotes here)
+    {
+      title: "Group Projects Be Like",
+      subtitle: "“We’re all in this together — except for you.”",
+      content: "One does the work, two do nothing, and one disappears like a magician.",
+      color: "danger",
+      button: "Too Real",
+    },
+    {
+      title: "Night Owl Struggles",
+      subtitle: "“Sleep is for the weak… or the well-organized.”",
+      content: "I only study at night because that’s when the panic kicks in.",
+      color: "dark",
+      button: "Night Mode On",
+    },
+    {
+      title: "Accidental Genius",
+      subtitle: "“I didn’t study, but somehow passed.”",
+      content: "Sometimes the universe just gives you a ‘W’ for vibes.",
+      color: "success",
+      button: "Lucky Me",
+    },
   ];
 
   const backgroundStyle: React.CSSProperties = {
-    background: 'linear-gradient(to right,rgb(150, 131, 104),rgb(239, 159, 133))',
+    backgroundImage: `
+      linear-gradient(to right, rgba(150, 131, 104, 0.9), rgba(239, 159, 133, 0.9)),
+      url('https://www.transparenttextures.com/patterns/cubes.png')
+    `,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'repeat',
     minHeight: '100vh',
     padding: '16px',
   };
